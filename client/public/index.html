@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caetité Palace Hotel - Experiência de Luxo Incomparável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo"><img src="./Logo Transparente Colorida2.png" alt=""></a>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#accommodations">Acomodações</a></li>
+                <li><a href="#amenities">Comodidades</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            
+            <div class="cta-buttons">
+                <a href="#booking" class="btn-primary">Reserve Agora</a>
+                <a href="#gallery" class="btn-secondary">Conheça o Hotel</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations -->
+    <section id="accommodations" class="section">
+        <h2 class="section-title">Nossas Acomodações</h2>
+        <div class="room-tabs">
+            <input type="radio" id="standard" name="room-tab" checked>
+            <input type="radio" id="standard-duplo" name="room-tab">
+            <input type="radio" id="triplo" name="room-tab">
+            <input type="radio" id="quadruplo" name="room-tab">
+            <input type="radio" id="quintuplo" name="room-tab">
+            
+            <div class="tab-labels">
+                <label for="standard">Standard</label>
+                <label for="standard-duplo">Standard Duplo</label>
+                <label for="triplo">Triplo</label>
+                <label for="quadruplo">Quadruplo</label>
+                <label for="quintuplo">Quintuplo</label>
+            </div>
+            
+            <div class="tab-content">
+                <div class="room-card" id="standard-content">
+                    <div class="room-image">
+                        <img src="search_images/ObzR3H1DJxCm.webp" alt="Quarto Standard" onclick="openRoomCarousel('standard', this)">
+                    </div>
+                    <div class="room-info">
+                        <h3>Quarto Standard</h3>
+                        <p>Nosso quarto standard oferece todo o conforto necessário para uma estadia agradável. Ideal para casais ou viajantes individuais que buscam praticidade e elegância.</p>
+                        <div class="room-amenities">
+                            <div class="amenity">
+                                <img src="Icone/air-conditioner-icon.jpeg" alt="Ar-condicionado">
+                                <span>Ar-condicionado</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/TV_black.png" alt="TV">
+                                <span>TV</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Frigobar.png" alt="Frigobar">
+                                <span>Frigobar</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Café.png" alt="Café da manhã">
+                                <span>Café da manhã</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Wi-Fi_icon_fixed.png" alt="WiFi">
+                                <span>WiFi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card" id="standard-duplo-content">
+                    <div class="room-image">
+                        <img src="search_images/XxrTQbCHSDzv.jpg" alt="Quarto Standard Duplo" onclick="openRoomCarousel('standard-duplo', this)">
+                    </div>
+                    <div class="room-info">
+                        <h3>Quarto Standard Duplo</h3>
+                        <p>Espaçoso e confortável, o quarto standard duplo conta com duas camas de solteiro ou uma cama de casal, perfeito para casais ou amigos que viajam juntos.</p>
+                        <div class="room-amenities">
+                            <div class="amenity">
+                                <img src="Icone/air-conditioner-icon.jpeg" alt="Ar-condicionado">
+                                <span>Ar-condicionado</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/TV_black.png" alt="TV">
+                                <span>TV</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Frigobar.png" alt="Frigobar">
+                                <span>Frigobar</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Café.png" alt="Café da manhã">
+                                <span>Café da manhã</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Wi-Fi black.png" alt="WiFi">
+                                <span>WiFi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card" id="triplo-content">
+                    <div class="room-image">
+                        <img src="search_images/zOXZciuWyIKJ.jpg" alt="Quarto Triplo" onclick="openRoomCarousel('triplo', this)">
+                    </div>
+                    <div class="room-info">
+                        <h3>Quarto Triplo</h3>
+                        <p>Acomodação ideal para pequenos grupos ou famílias, oferecendo três camas confortáveis em um ambiente amplo e bem decorado.</p>
+                        <div class="room-amenities">
+                            <div class="amenity">
+                                <img src="Icone/air-conditioner-icon.jpeg" alt="Ar-condicionado">
+                                <span>Ar-condicionado</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/TV_black.png" alt="TV">
+                                <span>TV</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Frigobar.png" alt="Frigobar">
+                                <span>Frigobar</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Café.png" alt="Café da manhã">
+                                <span>Café da manhã</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Wi-Fi black.png" alt="WiFi">
+                                <span>WiFi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card" id="quadruplo-content">
+                    <div class="room-image">
+                        <img src="search_images/KG0PgTXrBrNo.jpg" alt="Quarto Quadruplo" onclick="openRoomCarousel('quadruplo', this)">
+                    </div>
+                    <div class="room-info">
+                        <h3>Quarto Quadruplo</h3>
+                        <p>Perfeito para famílias ou grupos de amigos, o quarto quadruplo oferece quatro camas em um ambiente espaçoso e acolhedor.</p>
+                        <div class="room-amenities">
+                            <div class="amenity">
+                                <img src="Icone/air-conditioner-icon.jpeg" alt="Ar-condicionado">
+                                <span>Ar-condicionado</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/TV_black.png" alt="TV">
+                                <span>TV</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Frigobar.png" alt="Frigobar">
+                                <span>Frigobar</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Café.png" alt="Café da manhã">
+                                <span>Café da manhã</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Wi-Fi black.png" alt="WiFi">
+                                <span>WiFi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card" id="quintuplo-content">
+                    <div class="room-image">
+                        <img src="search_images/BgnNpSam5HdW.webp" alt="Quarto Quintuplo" onclick="openRoomCarousel('quintuplo', this)">
+                    </div>
+                    <div class="room-info">
+                        <h3>Quarto Quintuplo</h3>
+                        <p>Nossa maior acomodação, ideal para grupos grandes ou famílias numerosas, oferecendo cinco camas em um ambiente amplo e confortável.</p>
+                        <div class="room-amenities">
+                            <div class="amenity">
+                                <img src="Icone/air-conditioner-icon.jpeg" alt="Ar-condicionado">
+                                <span>Ar-condicionado</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/TV_black.png" alt="TV">
+                                <span>TV</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Frigobar.png" alt="Frigobar">
+                                <span>Frigobar</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Café.png" alt="Café da manhã">
+                                <span>Café da manhã</span>
+                            </div>
+                            <div class="amenity">
+                                <img src="Icone/Wi-Fi black.png" alt="WiFi">
+                                <span>WiFi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Carousel Modal -->
+    <div id="roomCarouselModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRoomCarousel()">&times;</span>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="changeRoomSlide(-1)">&#10094;</button>
+                <div class="carousel-slide">
+                    <img id="carouselImage" src="" alt="">
+                </div>
+                <button class="carousel-btn next" onclick="changeRoomSlide(1)">&#10095;</button>
+            </div>
+            <div class="carousel-indicators" id="carouselIndicators"></div>
+        </div>
+    </div>
+
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+        <h2 class="section-title">Galeria</h2>
+        <div class="gallery-tabs">
+            <input type="radio" id="estrutura" name="gallery-tab" checked>
+            <input type="radio" id="quartos" name="gallery-tab">
+            <input type="radio" id="cafe" name="gallery-tab">
+            <input type="radio" id="eventos" name="gallery-tab">
+            
+            <div class="gallery-tab-labels">
+                <label for="estrutura">Estrutura</label>
+                <label for="quartos">Quartos</label>
+                <label for="cafe">Café da Manhã</label>
+                <label for="eventos">Salão de Eventos</label>
+            </div>
+            
+            <div class="gallery-content">
+                <div class="gallery-grid" id="estrutura-gallery">
+                    <div class="gallery-item">
+                        <img src="FachadaBanner.jpeg" alt="Fachada do Hotel" onclick="openGalleryModal(this, 'estrutura')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Recepção/quadros.jpg" alt="Recepção" onclick="openGalleryModal(this, 'estrutura')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Recepção/jarro.jpg" alt="Lobby" onclick="openGalleryModal(this, 'estrutura')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Deck/WhatsApp Image 2022-08-29 at 10.16.35.jpeg" alt="Área Externa" onclick="openGalleryModal(this, 'estrutura')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Recepção/sala ampla.jpg" alt="Área Externa" onclick="openGalleryModal(this, 'estrutura')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Recepção/salacentro.jpg" alt="Área Externa" onclick="openGalleryModal(this, 'estrutura')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Estrutura/Estrutura 1.jpg" alt="Área Externa" onclick="openGalleryModal(this, 'estrutura')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Estrutura/Estrutura 2.jpg" alt="Área Externa" onclick="openGalleryModal(this, 'estrutura')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Estrutura/Estrutura 3.jpg" alt="Área Externa" onclick="openGalleryModal(this, 'estrutura')">
+                    </div>
+                </div>
+                
+                <div class="gallery-grid" id="quartos-gallery">
+                    <div class="gallery-item">
+                        <img src="./Quartos/Casal 1.jpeg" alt="Quarto Standard" onclick="openGalleryModal(this, 'quartos')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Quartos/casal 2.jpeg" alt="Quarto Duplo" onclick="openGalleryModal(this, 'quartos')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Quartos/Casal 3.jpeg" alt="Quarto Triplo" onclick="openGalleryModal(this, 'quartos')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="search_images/KG0PgTXrBrNo.jpg" alt="Quarto Quadruplo" onclick="openGalleryModal(this, 'quartos')">
+                    </div>
+                </div>
+                
+                <div class="gallery-grid" id="cafe-gallery">
+                    <div class="gallery-item">
+                        <img src="./Café da Manhã/Cafe 1.jpg" alt="Café da Manhã" onclick="openGalleryModal(this, 'cafe')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Café da Manhã/Cafe 2.jpg" alt="Buffet" onclick="openGalleryModal(this, 'cafe')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Café da Manhã/Cafe 3.jpg" alt="Salão do Café" onclick="openGalleryModal(this, 'cafe')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Café da Manhã/Cafe 4.jpg" alt="Mesa do Café" onclick="openGalleryModal(this, 'cafe')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Café da Manhã/caféwilliam4.jpg" alt="Mesa do Café" onclick="openGalleryModal(this, 'cafe')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Café da Manhã/caféwilliam6.jpg" alt="Mesa do Café" onclick="openGalleryModal(this, 'cafe')">
+                    </div>
+                </div>
+                
+                <div class="gallery-grid" id="eventos-gallery">
+                    <div class="gallery-item">
+                        <img src="./Salão de Eventos/Salão 1.jpeg" alt="Salão de Eventos" onclick="openGalleryModal(this, 'eventos')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Salão de Eventos/Salão 2.jpeg" alt="Evento Social" onclick="openGalleryModal(this, 'eventos')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Salão de Eventos/Salão 3.jpg" alt="Casamento" onclick="openGalleryModal(this, 'eventos')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Salão de Eventos/WhatsApp Image 2022-03-21 at 18.38.04.jpeg" alt="Conferência" onclick="openGalleryModal(this, 'eventos')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Salão de Eventos/Salão 5.jpeg" alt="Conferência" onclick="openGalleryModal(this, 'eventos')">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Salão de Eventos/Salão 6.jpg" alt="Conferência" onclick="openGalleryModal(this, 'eventos')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeGalleryModal()">&times;</span>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="changeGallerySlide(-1)">&#10094;</button>
+                <div class="carousel-slide">
+                    <img id="galleryCarouselImage" src="" alt="">
+                </div>
+                <button class="carousel-btn next" onclick="changeGallerySlide(1)">&#10095;</button>
+            </div>
+            <div class="carousel-indicators" id="galleryCarouselIndicators"></div>
+        </div>
+    </div>
+
+    <!-- Location -->
+    <section id="location" class="section">
+        <h2 class="section-title">Nossa Localização</h2>
+        <div class="location-container">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.88665671560636!2d-42.484769931922!3d-14.06616133627034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x744d5cc36baec25%3A0x100f1a8191c5d6b6!2sCaetit%C3%A9%20Palace%20Hotel!5e0!3m2!1sen!2sbr!4v1756655184653!5m2!1sen!2sbr"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            <div class="location-info">
+                <h3>Endereço</h3>
+                <p>Praça Tancredo Neves, Nº 10<br>Centro, Caetité - Bahia<br>CEP: 46400-000</p>
+                <h3>Como Chegar</h3>
+                <p>Localizado no coração da cidade, o Caetité Palace Hotel oferece fácil acesso aos principais pontos turísticos e comerciais da região.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contato e Informações Importantes</h2>
+        <div class="contact-container">
+            <div class="contact-section">
+                <h3>Contatos do Hotel</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><img src="Icone/Telefone.jpeg" alt="Telefone"></div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(77) 3454-2244</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><img src="Icone/Whatsapp.png" alt="WhatsApp"></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>(77) 99186-2244</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><img src="Icone/Email.png" alt="E-mail"></div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>caetitepalace@hotmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.instagram.com/caetitepalace/" target="blank">
+                        <div class="contact-item">
+                                <div class="contact-icon"><img src="Icone/Instagram.webp" alt="Instagram"></div>
+                                <div>
+                                    <h4>Instagram</h4>
+                                    <p>@caetitepalace</p>
+                                    
+                                </div>
+                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hotel-info-section">
+                <h3>Informações do Hotel</h3>
+                <div class="hotel-info">
+                    <div class="info-item">
+                        <div class="info-icon"><img src="Icone/Relógio.png" alt="Check-in"></div>
+                        <div>
+                            <h4>Check-in</h4>
+                            <p>A partir das 12:00h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><img src="Icone/Relógio.png" alt="Check-out"></div>
+                        <div>
+                            <h4>Check-out</h4>
+                            <p>Até as 12:00h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><img src="Icone/Café.png" alt="Café da Manhã"></div>
+                        <div>
+                            <h4>Café da Manhã</h4>
+                            <p>Incluso nas diárias<br>Servido das 06:30h às 09:00h<br>No andar térreo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🏨</div>
+                        <div>
+                            <h4>Recepção</h4>
+                            <p>24 horas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Caetité Palace Hotel</h3>
+                <p>CNPJ: 01.808.259/0001-26</p>
+                <p>Praça Tancredo Neves, Nº 10 - Centro</p>
+                <p>Caetité - Bahia - CEP: 46400-000</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>📞 (11) 9999-8888</p>
+                <p>📱 (11) 99999-9999</p>
+                <p>✉️ contato@crettepalace.com</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/caetitepalace/" class="social-link">📷 Instagram</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <div class="footer-links">
+                    <a href="#privacy">Política de Privacidade</a>
+                    <a href="#terms">Termos de Uso</a>
+                    <a href="#cancellation">Política de Cancelamento</a>
+                    <a href="#sitemap">Mapa do Site</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Crette Palace Hotel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Room carousel data
+        const roomImages = {
+            'standard': [
+                'search_images/ObzR3H1DJxCm.webp',
+                './Quartos/Casal 1.jpeg',
+                './Quartos/casal 2.jpeg'
+            ],
+            'standard-duplo': [
+                'search_images/XxrTQbCHSDzv.jpg',
+                './Quartos/Casal 3.jpeg',
+                './Quartos/Casal 1.jpeg'
+            ],
+            'triplo': [
+                'search_images/zOXZciuWyIKJ.jpg',
+                './Quartos/casal 2.jpeg',
+                './Quartos/Casal 3.jpeg'
+            ],
+            'quadruplo': [
+                'search_images/KG0PgTXrBrNo.jpg',
+                './Quartos/Casal 1.jpeg',
+                './Quartos/casal 2.jpeg'
+            ],
+            'quintuplo': [
+                'search_images/BgnNpSam5HdW.webp',
+                './Quartos/Casal 3.jpeg',
+                './Quartos/Casal 1.jpeg'
+            ]
+        };
+
+        // Gallery images data
+        const galleryImages = {
+            'estrutura': [
+                'FachadaBanner.jpeg',
+                './Recepção/quadros.jpg',
+                './Recepção/jarro.jpg',
+                './Deck/WhatsApp Image 2022-08-29 at 10.16.35.jpeg',
+                './Recepção/sala ampla.jpg',
+                './Recepção/salacentro.jpg'
+            ],
+            'quartos': [
+                './Quartos/Casal 1.jpeg',
+                './Quartos/casal 2.jpeg',
+                './Quartos/Casal 3.jpeg',
+                'search_images/KG0PgTXrBrNo.jpg'
+            ],
+            'cafe': [
+                './Café da Manhã/Cafe 1.jpg',
+                './Café da Manhã/Cafe 2.jpg',
+                './Café da Manhã/Cafe 3.jpg',
+                './Café da Manhã/Cafe 4.jpg',
+                './Café da Manhã/caféwilliam4.jpg',
+                './Café da Manhã/caféwilliam6.jpg'
+            ],
+            'eventos': [
+                './Salão de Eventos/Salão 1.jpeg',
+                './Salão de Eventos/Salão 2.jpeg',
+                './Salão de Eventos/Salão 3.jpg',
+                './Salão de Eventos/WhatsApp Image 2022-03-21 at 18.38.04.jpeg',
+                './Salão de Eventos/Salão 5.jpeg',
+                './Salão de Eventos/Salão 6.jpg'
+            ]
+        };
+
+        let currentRoomSlide = 0;
+        let currentRoomType = '';
+        let currentGallerySlide = 0;
+        let currentGalleryType = '';
+
+        // Room carousel functions
+        function openRoomCarousel(roomType, imgElement = null) {
+            currentRoomType = roomType;
+            
+            if (imgElement) {
+                // Se uma imagem específica foi clicada, encontrar seu índice
+                const images = roomImages[roomType];
+                const clickedImageSrc = imgElement.src;
+                const clickedImageName = clickedImageSrc.split('/').pop();
+                
+                currentRoomSlide = images.findIndex(img => {
+                    const imageName = img.split('/').pop();
+                    return imageName === clickedImageName;
+                });
+                
+                if (currentRoomSlide === -1) currentRoomSlide = 0;
+            } else {
+                currentRoomSlide = 0;
+            }
+            
+            const modal = document.getElementById('roomCarouselModal');
+            modal.style.display = 'block';
+            updateRoomCarousel();
+        }
+
+        function closeRoomCarousel() {
+            document.getElementById('roomCarouselModal').style.display = 'none';
+        }
+
+        function changeRoomSlide(direction) {
+            const images = roomImages[currentRoomType];
+            currentRoomSlide += direction;
+            if (currentRoomSlide >= images.length) currentRoomSlide = 0;
+            if (currentRoomSlide < 0) currentRoomSlide = images.length - 1;
+            updateRoomCarousel();
+        }
+
+        function updateRoomCarousel() {
+            const images = roomImages[currentRoomType];
+            const carouselImage = document.getElementById('carouselImage');
+            const indicators = document.getElementById('carouselIndicators');
+            
+            carouselImage.src = images[currentRoomSlide];
+            
+            // Update indicators
+            indicators.innerHTML = '';
+            images.forEach((_, index) => {
+                const indicator = document.createElement('span');
+                indicator.className = 'indicator' + (index === currentRoomSlide ? ' active' : '');
+                indicator.onclick = () => {
+                    currentRoomSlide = index;
+                    updateRoomCarousel();
+                };
+                indicators.appendChild(indicator);
+            });
+        }
+
+        // Gallery carousel functions
+        function openGalleryModal(imgElement, galleryType) {
+            currentGalleryType = galleryType;
+            const images = galleryImages[galleryType];
+            
+            // Obter o nome do arquivo da imagem clicada
+            const clickedImageSrc = imgElement.src;
+            const clickedImageName = clickedImageSrc.split('/').pop();
+            
+            // Encontrar o índice da imagem clicada na lista de imagens
+            currentGallerySlide = images.findIndex(img => {
+                const imageName = img.split('/').pop();
+                return imageName === clickedImageName;
+            });
+            
+            // Se não encontrar, usar o índice 0
+            if (currentGallerySlide === -1) currentGallerySlide = 0;
+            
+            const modal = document.getElementById('galleryModal');
+            modal.style.display = 'block';
+            updateGalleryCarousel();
+        }
+
+        function closeGalleryModal() {
+            document.getElementById('galleryModal').style.display = 'none';
+        }
+
+        function changeGallerySlide(direction) {
+            const images = galleryImages[currentGalleryType];
+            currentGallerySlide += direction;
+            if (currentGallerySlide >= images.length) currentGallerySlide = 0;
+            if (currentGallerySlide < 0) currentGallerySlide = images.length - 1;
+            updateGalleryCarousel();
+        }
+
+        function updateGalleryCarousel() {
+            const images = galleryImages[currentGalleryType];
+            const carouselImage = document.getElementById('galleryCarouselImage');
+            const indicators = document.getElementById('galleryCarouselIndicators');
+            
+            carouselImage.src = images[currentGallerySlide];
+            
+            // Update indicators
+            indicators.innerHTML = '';
+            images.forEach((_, index) => {
+                const indicator = document.createElement('span');
+                indicator.className = 'indicator' + (index === currentGallerySlide ? ' active' : '');
+                indicator.onclick = () => {
+                    currentGallerySlide = index;
+                    updateGalleryCarousel();
+                };
+                indicators.appendChild(indicator);
+            });
+        }
+
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+            const roomModal = document.getElementById('roomCarouselModal');
+            const galleryModal = document.getElementById('galleryModal');
+            if (event.target === roomModal) {
+                closeRoomCarousel();
+            }
+            if (event.target === galleryModal) {
+                closeGalleryModal();
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header transparency on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Show room content based on selected tab
+        function showRoomContent() {
+            const tabs = document.querySelectorAll('input[name="room-tab"]');
+            const contents = document.querySelectorAll('.room-card');
+            
+            tabs.forEach((tab, index) => {
+                if (tab.checked) {
+                    contents.forEach(content => content.style.display = 'none');
+                    contents[index].style.display = 'flex';
+                }
+            });
+        }
+
+        // Show gallery content based on selected tab
+        function showGalleryContent() {
+            const tabs = document.querySelectorAll('input[name="gallery-tab"]');
+            const contents = document.querySelectorAll('.gallery-grid');
+            
+            tabs.forEach((tab, index) => {
+                if (tab.checked) {
+                    contents.forEach(content => content.style.display = 'none');
+                    contents[index].style.display = 'grid';
+                }
+            });
+        }
+
+        // Initialize content display
+        document.addEventListener('DOMContentLoaded', function() {
+            showRoomContent();
+            showGalleryContent();
+            
+            // Add event listeners for tab changes
+            document.querySelectorAll('input[name="room-tab"]').forEach(tab => {
+                tab.addEventListener('change', showRoomContent);
+            });
+            
+            document.querySelectorAll('input[name="gallery-tab"]').forEach(tab => {
+                tab.addEventListener('change', showGalleryContent);
+            });
+        });
+    </script>
+</body>
+</html>
+
